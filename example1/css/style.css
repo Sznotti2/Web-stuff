@@ -1,0 +1,83 @@
+/* grides megoldás */
+main {
+	background-color: aqua;
+
+	display: grid;
+  	grid-template-columns: 1fr 1fr 1fr;
+	gap: 1em;
+}
+@media screen and (max-width: 60rem) {
+	main {
+		grid-template-columns: 1fr;
+	}
+}
+/* margsó megoldás */
+.container {
+	padding: 4rem 1rem;
+	/* width: 60rem; when shrinked, it causes overflow (part of the contents not visible) */
+	max-width: 60rem; /* ues this instead, it's allowed to shrink */
+	margin: 0 auto;
+	/* border: 2px solid red; */
+}
+
+/* breakpoint for 1st section */
+@media screen and (min-width: 40rem) {
+	.split {
+		display: flex;
+		gap: 2rem;
+	}
+}
+/* az ötlet az, hogy ha a képernyő szélesebbbb mint 40rem akkor töltse ki a rendelkezésre álló helyet */
+
+header .responsive-size {
+	font-size: clamp(2rem, 1rem + 7vw, 6rem); /* két érték között tartja (ez esetben) a szöveg méretet képernyő szélesség arányában */
+	/* ezt padding-nél is lehet használni */
+}
+
+header .responsive-margin {
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+/* BASIC STYLING, NOT THE MAIN ATTRACTION*/
+body {
+	background-color: #262626;
+	color: #e6e6e6;
+	text-align: center;
+}
+
+header {
+	background-color: #333333;
+}
+
+section:nth-child(2n) {
+	background-color: #404040;
+}
+
+header, section, main { /* container elements */
+	padding: 4rem 1rem;
+}
+
+h1, h2, p, span {
+	font-family: system-ui;
+	margin: 0;
+}
+
+h1, h2 {
+	color: #ff5c19;
+	font-weight: 700;
+}
+
+h2, p, span {
+	margin-bottom: 1rem;
+}
+
+.wink-wink {
+	color: red;
+}
+
+img {
+	display: block; /* fix space around image */
+	max-width: 100%; /* fix overflowing */
+	padding: 0;
+}

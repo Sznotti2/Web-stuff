@@ -1,0 +1,40 @@
+body {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: whitesmoke;
+}
+
+.container-box {
+	background-color: white;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 3rem;
+	padding: 3rem;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container-box .title {
+	font-family: system-ui;
+	font-size: 2rem;
+	font-weight: 600
+}
+
+.container-box #number {
+	font-family: monospace;
+	font-size: 1.5rem;
+}
+
+button {
+	border: none;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}

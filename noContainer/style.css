@@ -1,0 +1,147 @@
+/* Here's the magic */
+.content-grid {
+	--padding-inline: 1rem;
+	--content-max-width: 55em;
+	--breakout-max-width: 70em;
+
+	--breakout-size: calc((var(--breakout-max-width) - var(--content-max-width)) / 2);
+	
+	display: grid;
+	/* 
+		el tudsz nevezni sorokat és oszlopokat
+	 */
+	grid-template-columns: 
+		[full-width-start] 
+			minmax(var(--padding-inline), 1fr) 
+				[breakout-start] 
+					minmax(0, var(--breakout-size)) 
+						[content-start] min( 100% - (var(--padding-inline) * 2), var(--content-max-width)) [content-end] 
+					minmax(0, var(--breakout-size)) 
+				[breakout-end] 
+			minmax(var(--padding-inline), 1fr) 
+		[full-width-end]  ;
+}
+
+/* 
+	ezeket a neveket később felhasználhatod mint tartalom határoló
+*/
+.content-grid > * {
+	grid-column: content;
+}
+
+.content-grid > .breakout {
+	grid-column: breakout;
+}
+
+.content-grid > .full-width {
+	grid-column: full-width;
+}
+
+
+/* király szöveg alatti vonal animáció */
+/* https://css-irl.info/animating-underlines/ */
+.real-underline {
+	text-decoration: underline 0.1em rgba(251, 170, 252, 0);
+	transition: text-decoration-color 300ms;
+}
+
+.real-underline:hover {
+	text-decoration-color: #fbaafc;
+}
+
+/* multi-line undeline with animation */
+/* https://css-irl.info/animating-underlines/ */
+.multi-line-undeline {
+	text-decoration: none;
+	background: 
+		linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+		linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+	background-size: 100% 0.1em, 0 0.1em;
+	background-position: 100% 100%, 0 100%;
+	background-repeat: no-repeat;
+	transition: background-size 400ms;
+}
+
+.multi-line-undeline:hover,
+.multi-line-undeline:focus {
+	background-size: 0 0.1em, 100% 0.1em;
+}
+
+
+/* kinézet */
+:root {
+	--color-scheme: dark;
+}
+
+html {
+	color-scheme: var(--color-scheme);
+}
+
+body {
+	background-color: #29344b;
+	color: white;
+	font-family: sans-serif;
+}
+
+/* Nav */
+nav {
+	background-color: #675883;
+	height: 4em;
+	padding: 0 1.5em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+nav .logo-text {
+	color: orange;
+	font-size: 1.5em;
+	font-weight: 700;
+	cursor: pointer;
+}
+nav ul {
+	list-style: none;
+	display: flex;
+	gap: 1em;
+}
+nav li {
+	cursor: pointer;
+	transition: color .2s;
+}
+nav li:hover {
+	color: orange;
+}
+
+/* Body */
+main {
+	margin: 2em 0;
+}
+
+.site-title {
+	font-size: 4em;
+	text-transform: uppercase;
+}
+
+section {
+	margin: 2rem 0;
+	padding: 3em 0;
+}
+
+p {
+	padding: .5em 0;
+}
+
+img {
+	max-height: 20em;
+	width: 100%;
+	object-fit: cover;
+}
+
+.bg-primary {
+	background-color: #182635;
+}
+
+
+.call-to-action {
+	padding: 1rem;
+	background: hsl(0 0% 100% / 0.15);
+}

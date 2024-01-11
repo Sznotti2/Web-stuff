@@ -1,0 +1,82 @@
+<!-- https://www.youtube.com/watch?v=c13gpBrnGEw -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>No More Containers</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<nav>
+		<span class="logo-text">Basic Logo</span>
+
+		<ul>
+			<li>Home</li>
+			<li>Learn More</li>
+			<li>MENU</li>
+			<li>about us</li>
+		</ul>
+	</nav>
+
+	<main class="content-grid">
+
+		<h1 class="site-title">No more containers!</h1>
+		<p>It can be useful to have a system in place that's easy to go full-width, or have a "breakout" section for calls to action or blockquotes, or other things you want to call attention to.</p>
+		<p>Traditionally, we use a <a class="real-underline" href="#">container or wrapper</a>, which we need to close, and then open again, but thanks to grid, and with the recent additions of subgrid to all the evergreen browsers, maybe there's a better way to do things?</p>
+		<p>It has it's downsides, as the code is more complexm and it's not obvious how it works when we're so used to old pattern.</p>
+		<p>That said, we souldn't limit oursevles just because we are used to working in a specific way.</p>
+
+		<section class="bg-primary full-width content-grid">
+			<h2>This section has a different background-color</h2>
+			<p><a class="multi-line-undeline" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ultrices augue at erat interdum, vel condimentum augue vehicula.</a> Pellentesque justo nisl, porttitor at dui nec, imperdiet pellentesque sapien. Mauris mauris enim, pharetra rhoncus ante ac, elementum convallis velit. Mauris molestie sed ante in placerat.</p>
+			<p>Nulla dapibus sem vel neque facilisis, at tincidunt ipsum tristique. Nullam id odio tortor. Nunc tempor ante non purus imperdiet pulvinar. Maecenas sollicitudin, nunc sit amet finibus imperdiet, lacus metus cursus tortor, ac scelerisque metus lectus vitae lectus. Mauris mollis arcu eros, ut vehicula massa condimentum at.</p>
+			<p>Mauris vel neque rhoncus, dapibus sem nec, porta erat. Aenean vel semper nisl. Nullam eget nunc nulla. Sed vel semper neque. Morbi mauris arcu, fermentum non sem eu, interdum ultrices augue.</p>
+		</section>
+
+		<section class="breakout">
+			<h2>Back to normal</h2>
+			<p>Donec ligula neque, consectetur mollis consectetur non, dapibus et justo. Maecenas non sem eu tortor pellentesque consectetur quis sit amet urna. In hac habitasse platea dictumst. Mauris eget purus scelerisque libero vestibulum fermentum id a leo.</p>
+			<p class='call-to-action'>Not sure why, but we could set things up if ever you wanted random text to be full-bleed without bothering with a div or anything on the outside of it as well</p>
+			<p>Sed tempor arcu euismod leo sodales faucibus. Aenean lacinia mi pulvinar felis accumsan sodales. Proin vel nibh urna. Suspendisse potenti. Sed laoreet libero id leo faucibus, a blandit dolor egestas. Aenean consectetur est quam, non pulvinar est bibendum eget.</p>
+		</section>
+		
+		<section class="content-grid full-width">
+			<h2>Images as full-bleed works too</h2>
+			<img class="full-width" src="resources/images/tajkep-hegyek-szeles.jpg" alt="image">
+			<p>Donec a est vitae tortor mattis consequat. Ut id accumsan mauris. Sed tempor arcu euismod leo sodales faucibus. Aenean lacinia mi pulvinar felis accumsan sodales. Proin vel nibh urna. Suspendisse potenti. Sed laoreet libero id leo faucibus, a blandit dolor egestas. Aenean consectetur est quam, non pulvinar est bibendum eget.</p>
+			<p>Maecenas non sem eu tortor pellentesque consectetur quis sit amet urna. In hac habitasse platea dictumst. Mauris eget purus scelerisque libero vestibulum fermentum id a leo. Morbi sapien nunc, pulvinar in libero luctus, aliquam accumsan sem.</p>
+			</section>
+
+		<section class="full-width content-grid bg-primary">
+			<h2>Images as full-bleed works too</h2>
+			<img class="breakout" src="resources/images/james-webb-szeles.jpg" alt="image">
+			<p>Donec a est vitae tortor mattis consequat. Ut id accumsan mauris. Sed tempor arcu euismod leo sodales faucibus. Aenean lacinia mi pulvinar felis accumsan sodales. Proin vel nibh urna. Suspendisse potenti. Sed laoreet libero id leo faucibus, a blandit dolor egestas. Aenean consectetur est quam, non pulvinar est bibendum eget.</p>
+			<p class="breakout call-to-action">Maecenas non sem eu tortor pellentesque consectetur quis sit amet urna. In hac habitasse platea dictumst. Mauris eget purus scelerisque libero vestibulum fermentum id a leo. Morbi sapien nunc, pulvinar in libero luctus, aliquam accumsan sem.</p>
+			<p>Praesent ac sapien ac lorem consectetur porttitor eu at velit. Duis pulvinar sapien dolor, et molestie dolor mattis posuere. Duis ornare eros non eros tincidunt, sagittis iaculis mi volutpat. Suspendisse in luctus metus. Nullam metus enim, elementum quis nisl ac, volutpat consequat est. In laoreet nisi in dolor hendrerit consectetur. Pellentesque eleifend id ligula vitae ultrices. Mauris ultricies imperdiet nulla, ac efficitur ligula feugiat nec. Aenean sit amet ante eget nisl porttitor posuere. </p>
+			<p>Cras a libero ut orci consectetur iaculis. Vivamus hendrerit rutrum enim sed consequat. Cras et ligula a urna pulvinar sodales ut eget purus. Suspendisse at scelerisque risus, in porttitor sapien. Nullam finibus nibh euismod semper accumsan. </p>
+		</section>
+
+		<section>
+			<h2>Images as full-bleed works too</h2>
+			<img src="resources/images/tajkep-szeles.jpg" alt="image">
+			<p>Quisque pharetra porttitor mauris, sed congue augue tincidunt vitae. Mauris quis facilisis massa. Nulla ipsum tortor, bibendum interdum gravida ut, interdum at enim. In hac habitasse platea dictumst. Vestibulum pulvinar egestas dignissim. </p>
+		</section>
+
+		<section>
+			<h2>Images as full-bleed works too</h2>
+			<img src="resources/images/modern-varos-szeles.jpg" alt="image">
+			<p>Quisque commodo turpis sit amet posuere tincidunt. Vestibulum vel nisi eget nisl commodo placerat. Vestibulum elementum ultrices ex ut vehicula. Fusce quis felis in justo rutrum aliquet. Phasellus in eros consequat lorem ultricies aliquam. Donec aliquet, augue luctus dignissim rutrum, orci justo placerat elit, eu rutrum purus purus tempor purus. Fusce et libero sodales velit mollis viverra. </p>
+			<p>Maecenas sagittis sit amet velit sit amet feugiat. Nulla velit tellus, porttitor malesuada dolor eu, tempor suscipit purus. Vivamus tempus sed ante vel aliquam. Donec eget massa tristique, commodo mi vitae, dictum quam. Phasellus et ante tincidunt, commodo nisi id, consequat velit. Phasellus porttitor elit non mauris posuere tempor. Etiam rutrum erat quis arcu posuere, vel venenatis est aliquet. </p>
+			<p>Praesent ac sapien ac lorem consectetur porttitor eu at velit. Duis pulvinar sapien dolor, et molestie dolor mattis posuere. Duis ornare eros non eros tincidunt, sagittis iaculis mi volutpat. Suspendisse in luctus metus. Nullam metus enim, elementum quis nisl ac, volutpat consequat est. In laoreet nisi in dolor hendrerit consectetur. Pellentesque eleifend id ligula vitae ultrices. Mauris ultricies imperdiet nulla, ac efficitur ligula feugiat nec. Aenean sit amet ante eget nisl porttitor posuere. </p>
+			<p>Mauris sed nisi mauris. Duis sodales ipsum quis felis gravida auctor. Praesent eu sapien ultrices, tristique nisl sollicitudin, cursus dui. Donec malesuada eleifend sapien, et porttitor nisi imperdiet eget. Vivamus sit amet orci mollis, congue dui eu, rutrum leo. Aenean eleifend dolor non suscipit cursus. Mauris maximus turpis magna, rutrum suscipit risus pellentesque at. Cras tincidunt aliquet mi vitae consequat. Integer tempus risus ut pharetra fringilla. Fusce sagittis quam a placerat vestibulum. Cras dignissim lectus sed tempus rhoncus.  </p>
+			<p>Cras ac bibendum enim. Nullam sed lectus euismod nibh pulvinar vestibulum. Vestibulum rutrum leo in viverra pharetra. Phasellus faucibus leo elementum nulla fringilla cursus. Sed dui leo, tincidunt quis arcu scelerisque, laoreet pellentesque mi. Duis ornare pellentesque turpis, tempor viverra elit. Nam egestas interdum velit, nec aliquet enim egestas sit amet. Etiam sit amet blandit risus, vitae tristique augue. Nam sollicitudin tortor ac eros gravida accumsan. Donec tincidunt orci in metus dignissim aliquam. </p>
+		</section>
+
+	</main>
+
+</body>
+</html>

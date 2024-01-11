@@ -1,0 +1,25 @@
+:root {
+	font-size: 1.2rem;
+	font-family: Courier, monospace;
+}
+
+main {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#box-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border: 1px solid black;
+	padding: 3rem;
+	gap: 1rem;
+}
+
+.hidden {
+	visibility: hidden;
+}
